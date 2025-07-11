@@ -6,7 +6,7 @@ import Home from "./pages/Home"
 import Laptops from "./pages/catalogLaptops"
 import Phones from "./pages/catalogPhones"
 import Accessories from "./pages/catalogAccessories"
-import Special from "./pages/saleSpecial"
+import Special from "./pages/SaleSpecial"
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import NotFound from "./pages/NotFound";
