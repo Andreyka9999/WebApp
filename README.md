@@ -55,3 +55,35 @@
     ```
 
 ---
+src/
+assets/ # Logos and images
+components/
+auth/ # Auth screens (Login, Register, Reset Password)
+ui/ # Reusable UI components (alert, carousel)
+Header/ Footer/ # Navigation bar and footer
+context/ # Auth context
+firebase/ # Firebase config
+pages/ # Catalog, Home, NotFound pages
+lib/ # Utility functions (cn, etc)
+
+---
+
+## Deployment
+
+This project is automatically deployed on Vercel when pushing to `main`.
+
+- **Build command:** `npm run build`
+- **Output directory:** `dist`
+- **Install command:** `npm install`
+
+---
+
+## Author
+
+- [Andreyka9999 on GitHub](https://github.com/Andreyka9999)
+
+---
+
+## License
+
+This project is for educational/demo purposes only.
