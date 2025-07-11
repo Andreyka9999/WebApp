@@ -24,3 +24,34 @@
 - Carousel (slider) for product images
 
 ---
+## Quick Start
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/Andreyka9999/WebApp.git
+    cd WebApp
+    ```
+
+2. **Install dependencies:**
+    ```sh
+    npm install
+    ```
+
+3. **Configure your environment variables** (if you want to use your own Firebase project):
+    ```
+    VITE_FIREBASE_API_KEY=...
+    VITE_FIREBASE_AUTH_DOMAIN=...
+    # ...other Firebase parameters
+    ```
+
+4. **Run the development server:**
+    ```sh
+    npm run dev
+    ```
+
+5. **Build for production:**
+    ```sh
+    npm run build
+    ```
+
+---
