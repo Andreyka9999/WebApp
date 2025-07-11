@@ -3,9 +3,9 @@ import { Routes, Route } from "react-router-dom"
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 import Home from "./pages/Home"
-import Laptops from "./pages/catalogLaptops"
-import Phones from "./pages/catalogPhones"
-import Accessories from "./pages/catalogAccessories"
+import Laptops from "./pages/CatalogLaptops"
+import Phones from "./pages/CatalogPhones"
+import Accessories from "./pages/CatalogAccessories"
 import Special from "./pages/SaleSpecial"
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
