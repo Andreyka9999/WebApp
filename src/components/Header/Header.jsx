@@ -7,15 +7,14 @@ export default function Header() {
   const [mobileProductOpen, setMobileProductOpen] = useState(false);
   const productRef = useRef(null);
 
-  // Мини-пресеты классов (строки, не отдельный CSS)
+  // Mini class presets
   const ui = useMemo(() => {
-    // очень лёгкие анимации (короткие и плавные)
+    // very light animations (short and smooth)
     const t = "transition-all duration-200 ease-out";
     const focus = "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-900/10";
     return {
       navLink:
         `relative inline-flex items-center rounded-lg px-3 py-2 text-sm font-medium text-gray-900/90 ${t} ${focus} ` +
-        // плавная «подчёркивающая» линия
         "after:content-[''] after:absolute after:left-3 after:right-3 after:-bottom-px after:h-[1.5px] after:scale-x-0 after:bg-gray-900/40 after:origin-left after:transition-transform after:duration-200 hover:after:scale-x-100 hover:text-gray-900",
       outlineBtn:
         `inline-flex items-center rounded-lg border border-gray-200 bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ${t} ${focus} ` +
@@ -32,7 +31,7 @@ export default function Header() {
     };
   }, []);
 
-  // Закрыть десктопный поповер по клику вне
+  // Close desktop popover on click outside
   useEffect(() => {
     const onDocClick = (e) => {
       if (!productRef.current) return;
@@ -52,7 +51,6 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* Бургер (мобилка) */}
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -67,7 +65,7 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Десктоп-навигация */}
+        {/* Desktop navigation */}
         <div className="hidden lg:flex lg:items-center lg:gap-x-3">
           {/* ------- Product (фикс ховера, логика прежняя) ------- */}
           <div
@@ -122,12 +120,11 @@ export default function Header() {
           </div>
           {/* ----------------------------------- */}
 
-          {/* Минималистичные нав-ссылки */}
+          {/* NAV-links */}
           <Link to="/features" className={ui.navLink}>Features</Link>
           <Link to="/marketplace" className={ui.navLink}>Marketplace</Link>
           <Link to="/company" className={ui.navLink}>Company</Link>
 
-          {/* Справа: Log in / Get started */}
           <div className="ml-2 flex items-center gap-2">
             <Link to="/login" className={ui.outlineBtn}>Log in</Link>
             <Link to="/register" className={ui.solidBtn}>Get started</Link>
@@ -135,7 +132,7 @@ export default function Header() {
         </div>
       </nav>
 
-      {/* Мобильная панель */}
+      {/* Mobile panel */}
       {mobileOpen && (
         <div className="lg:hidden">
           <div className="fixed inset-0 z-40 bg-black/20 backdrop-blur-[1px]" onClick={() => setMobileOpen(false)} />
@@ -154,7 +151,6 @@ export default function Header() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-200/80">
                 <div className="space-y-2 py-6">
-                  {/* Product (мобилка) */}
                   <div className="-mx-3">
                     <button
                       type="button"
