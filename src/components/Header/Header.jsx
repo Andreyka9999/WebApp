@@ -47,7 +47,7 @@ export default function Header() {
         {/* Логотип */}
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5" aria-label="Home">
-            <img src="/Logo.svg" alt="Logo" className="h-9 w-auto" />
+            <img src="/Logo.svg" alt="Logo" className="h-15 w-auto" />
           </Link>
         </div>
 
