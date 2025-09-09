@@ -10,6 +10,9 @@ import Special from "./pages/SaleSpecial"
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import NotFound from "./pages/NotFound";
+import Features from "./pages/Features";
+import Marketplace from "./pages/Marketplace";
+import Company from "./pages/Company";
 
 
 // Main app layout and router
@@ -35,6 +38,12 @@ export default function App() {
           {/* 404 Not Found route */}
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<NotFound />} />
+          {/* Features page */}
+          <Route path="/features" element={<Features />} />
+          {/* Marketplace page */}
+          <Route path="/marketplace" element={<Marketplace />} />
+          {/* Page about company */}
+          <Route path="/company" element={<Company />} />
         </Routes>
       </main>
       {/* Footer always at the bottom */}
