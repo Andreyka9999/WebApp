@@ -9,7 +9,7 @@ Or use this link - https://web-app-h1o9.vercel.app/
 
 **MyHomePage** is a demo e-commerce website built with modern technologies:
 - ⚡️ [React](https://react.dev/) + [Vite](https://vitejs.dev/)
--  [Tailwind CSS](https://tailwindcss.com/)
+- 🎨 [Tailwind CSS](https://tailwindcss.com/)
 - 🔐 Firebase Auth (Email, Google)
 - UI components from [shadcn/ui](https://ui.shadcn.com/)
 - Deployed on [Vercel](https://vercel.com/)
